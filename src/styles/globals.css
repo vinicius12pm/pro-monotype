@@ -1,28 +1,35 @@
 @import "@fontsource/jetbrains-mono";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "./variables.css";
+@import "./typography.css";
+@import "./layout.css";
 
-html {
-  scroll-behavior: smooth;
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
 }
 
 body{
 
-    font-family:"JetBrains Mono", monospace;
-    background:#fafafa;
-    color:#111;
+    background:var(--background);
 
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
 }
 
-ul {
-  list-style: none;
+ul{
+
+    list-style:none;
+
 }

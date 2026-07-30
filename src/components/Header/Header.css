@@ -39,13 +39,49 @@ nav{
     color:#f59d00;
 }
 
-.nav-list li:first-child a{
-    color:#f59d00;
-}
-
 .container{
     display:flex;
     justify-content:space-between;
     align-items:center;
     width:100%;
+}
+
+.nav-list a.active{
+    color:#f59d00;
+}
+
+.cursor{
+    color:#f59d00;
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.language-switch button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--gray);
+    transition: .25s;
+}
+
+.language-switch button:hover {
+    color: var(--accent);
+}
+
+.active-language {
+    color: var(--accent) !important;
+    font-weight: 700;
 }

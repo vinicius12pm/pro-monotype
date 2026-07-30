@@ -1,135 +1,96 @@
 .hero{
-
-    max-width:1400px;
-    margin:80px auto;
-
-    padding:0 60px;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    gap:120px;
+    min-height:78vh;
+
+    gap:100px;
 }
 
-.hero-left{
+.hero-content{
 
     flex:1;
+    max-width:620px;
+
 }
 
 .hero-subtitle{
 
-    font-size:2.3rem;
+    font-size:1.1rem;
+    color:var(--gray);
 
-    margin-bottom:25px;
+    letter-spacing:1px;
+
 }
 
-.hero h1{
+.hero-title{
 
-    font-size:7rem;
+    font-size:5.8rem;
+    line-height:.92;
 
-    line-height:.95;
+    margin:20px 0;
 
-    margin-bottom:40px;
+    font-weight:700;
+
 }
 
-.hero h1 span{
+.hero-title span{
 
-    color:#f59d00;
+    color:var(--accent);
+
 }
 
-.hero h2{
+.hero-divider{
 
-    display:flex;
+    width:120px;
+    height:4px;
 
-    align-items:center;
+    background:var(--accent);
 
-    gap:22px;
+    border-radius:4px;
 
-    font-size:2rem;
+    margin:32px 0;
 
-    font-weight:400;
-
-    margin-bottom:55px;
 }
 
-.hero h2 span{
+.hero-role{
 
-    color:#f59d00;
+    font-size:1.4rem;
+
+    color:var(--gray);
+
+    font-weight:500;
+
+    margin-bottom:50px;
+
 }
 
-.hero-text{
-
-    max-width:620px;
-
-    font-size:1.55rem;
-
-    line-height:1.7;
-
-    margin-bottom:70px;
-}
-
-.hero-button{
-
-    display:inline-block;
-
-    color:black;
-
-    font-size:1.8rem;
-
-    text-decoration:none;
-
-    transition:.3s;
-}
-
-.hero-button:hover{
-
-    color:#f59d00;
-}
-
-.hero-button::after{
-
-    content:"";
-
-    display:block;
-
-    width:240px;
-
-    height:2px;
-
-    background:#f59d00;
-
-    margin-top:12px;
-}
-
-.hero-right{
+.hero-image{
 
     flex:1;
 
     display:flex;
-
     justify-content:flex-end;
+
 }
 
-.hero-right img{
+.hero-image img{
 
-    width:500px;
+    width:420px;
 
-    border:2px solid black;
+    border-radius:24px;
 
-    border-radius:18px;
+    transition:
+        transform .35s,
+        box-shadow .35s;
+
 }
 
-.hero-skills{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    flex-wrap:nowrap;
+.hero-image img{
 
-    font-size:2rem;
-    margin-bottom:55px;
-}
+    transform:scale(1.02);
 
-.hero-skills span{
-    color:#f59d00;
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+
 }

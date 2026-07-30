@@ -3,37 +3,32 @@ import profile from "../../assets/profile.jpg";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero container">
 
-      <div className="hero-left">
-        <p className="hero-subtitle">
+      <div className="hero-content">
+
+        <span className="hero-subtitle">
           Hi, my name is
-        </p>
+        </span>
 
-        <h1>
-          Vinicius <span>Mossi</span>
+        <h1 className="hero-title">
+          Vinicius
+          <br />
+          <span>Mossi</span>
         </h1>
 
-        <h2 className="hero-skills">
-          QA Engineer
-          <span>|</span>
-          Salesforce
-          <span>|</span>
-          Manual Testing
+        <div className="hero-divider"></div>
+
+        <h2 className="hero-role">
+          QA Engineer • Salesforce • Tech Curious
         </h2>
-
-        <p className="hero-text">
-          I build quality into digital experiences
-          through testing, automation and attention to detail.
-        </p>
-
-        <a href="#projects" className="hero-button">
-          → View Projects
-        </a>
       </div>
 
-      <div className="hero-right">
-        <img src={profile} alt="Vinicius Mossi" />
+      <div className="hero-image">
+        <img
+          src={profile}
+          alt="Vinicius Mossi"
+        />
       </div>
 
     </section>
