@@ -6,7 +6,6 @@ function Hero() {
     <section className="hero">
 
       <div className="hero-left">
-
         <p className="hero-subtitle">
           Hi, my name is
         </p>
@@ -15,7 +14,7 @@ function Hero() {
           Vinicius <span>Mossi</span>
         </h1>
 
-        <h2>
+        <h2 className="hero-skills">
           QA Engineer
           <span>|</span>
           Salesforce
@@ -31,7 +30,6 @@ function Hero() {
         <a href="#projects" className="hero-button">
           → View Projects
         </a>
-
       </div>
 
       <div className="hero-right">
