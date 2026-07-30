@@ -1,4 +1,5 @@
 import "./Hero.css";
+import profile from "../../assets/profile.jpg";
 
 function Hero() {
   return (
@@ -34,7 +35,7 @@ function Hero() {
       </div>
 
       <div className="hero-right">
-
+        <img src={profile} alt="Vinicius Mossi" />
       </div>
 
     </section>
