@@ -1,10 +1,7 @@
+import Hero from "../../components/Hero/Hero";
+
 function Home() {
-  return (
-    <main>
-      <h1>Project Monotype</h1>
-      <p>My personal QA portfolio.</p>
-    </main>
-  );
+  return <Hero />;
 }
 
 export default Home;
