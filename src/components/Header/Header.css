@@ -60,31 +60,6 @@
     }
 }
 
-.language-switch{
-    display:flex;
-    align-items:center;
-    gap:8px;
-}
-
-.language-switch button{
-    background:none;
-    border:none;
-    cursor:pointer;
-    font-family:inherit;
-    font-size:1rem;
-    color:var(--gray);
-    transition:.25s;
-}
-
-.language-switch button:hover{
-    color:var(--accent);
-}
-
-.active-language{
-    color:var(--accent)!important;
-    font-weight:700;
-}
-
 /* ===========================
    HAMBURGER
 =========================== */
@@ -169,19 +144,5 @@
 
     }
 
-    .language-switch{
-        display:flex;
-        position:fixed;
-        top:26px;
-        right:82px;
-        height:39px;
-        z-index:1001;
-        font-size:.95rem;
-    }
-
-    .language-switch button{
-        font-size:.95rem;
-        padding:0;
-    }
 
 }

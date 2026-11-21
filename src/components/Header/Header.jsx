@@ -5,7 +5,6 @@ import { useState } from "react";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeLanguage, setActiveLanguage] = useState("PT");
 
   return (
     <header className="header">
@@ -63,19 +62,6 @@ function Header() {
           </ul>
         </nav>
 
-        <div className="language-switch">
-          <button
-            className={activeLanguage === "PT" ? "active-language" : ""}
-            onClick={() => setActiveLanguage("PT")}
-            aria-pressed={activeLanguage === "PT"}
-          >PT</button>
-          <span>|</span>
-          <button
-            className={activeLanguage === "EN" ? "active-language" : ""}
-            onClick={() => setActiveLanguage("EN")}
-            aria-pressed={activeLanguage === "EN"}
-          >EN</button>
-        </div>
 
       </div>
     </header>
