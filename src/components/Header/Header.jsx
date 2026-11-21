@@ -1,17 +1,27 @@
 import { NavLink } from "react-router-dom";
 import "./Header.css";
+import { useState } from "react";
+
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
       <div className="container">
 
         <h1 className="logo">VM.</h1>
+<button
+    className="menu-button"
+    onClick={() => setMenuOpen(!menuOpen)}
+>
+    {menuOpen ? "✕" : "☰"}
+</button>
 
-        <nav>
+        <nav className={menuOpen ? "nav open" : "nav"}>
           <ul className="nav-list">
             <li>
-              <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
+              <NavLink to="/" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
                 {({ isActive }) => (
                   <>
                     Home{isActive && <span className="cursor">_</span>}
@@ -21,17 +31,17 @@ function Header() {
             </li>
 
             <li>
-              <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>
+              <NavLink to="/about" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
                 {({ isActive }) => (
                   <>
-                    About{isActive && <span className="cursor">_</span>}
+                    About me{isActive && <span className="cursor">_</span>}
                   </>
                 )}
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="/projects" className={({ isActive }) => isActive ? "active" : ""}>
+              <NavLink to="/projects" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
                 {({ isActive }) => (
                   <>
                     Projects{isActive && <span className="cursor">_</span>}
@@ -41,7 +51,7 @@ function Header() {
             </li>
 
             <li>
-              <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>
+              <NavLink to="/contact" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
                 {({ isActive }) => (
                   <>
                     Contact{isActive && <span className="cursor">_</span>}
