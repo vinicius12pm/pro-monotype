@@ -170,9 +170,18 @@
     }
 
     .language-switch{
+        display:flex;
+        position:fixed;
+        top:26px;
+        right:82px;
+        height:39px;
+        z-index:1001;
+        font-size:.95rem;
+    }
 
-        display:none;
-
+    .language-switch button{
+        font-size:.95rem;
+        padding:0;
     }
 
 }

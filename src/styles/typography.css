@@ -27,3 +27,17 @@ p{
     line-height:1.7;
 
 }
+
+@media (max-width:768px){
+
+    main.main-content > h1{
+        width:100%;
+        min-width:0;
+        padding:0 24px;
+        text-align:center;
+        font-size:clamp(2.25rem, 10vw, 4.25rem);
+        line-height:1.1;
+        overflow-wrap:anywhere;
+    }
+
+}
