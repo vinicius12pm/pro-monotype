@@ -35,7 +35,6 @@ function Projects() {
     <section className="projects-page" aria-labelledby="projects-title">
       <div className="projects-content">
         <header className="projects-heading">
-          <p className="projects-kicker">SALESFORCE EXPERIENCE</p>
           <h1 className="projects-title" id="projects-title">Projects</h1>
         </header>
 

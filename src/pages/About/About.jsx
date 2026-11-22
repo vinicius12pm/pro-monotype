@@ -30,7 +30,6 @@ function About() {
   return (
     <section className="about-page" aria-labelledby="about-title">
       <div className="about-content">
-        <p className="about-kicker">QUALITY ASSURANCE · SALESFORCE</p>
         <h1 className="about-title" id="about-title">About me</h1>
         <p className="about-summary">
           I am a Manual QA Engineer with strong experience working in international
