@@ -64,7 +64,8 @@
 }
 
 .personal-experience-text {
-    max-width:92ch;
+    width:100%;
+    max-width:none;
     margin:0;
     color:var(--gray);
     font-size:1rem;
@@ -84,7 +85,8 @@
 }
 
 .projects-skills-list {
-    max-width:92ch;
+    width:100%;
+    max-width:none;
     margin:0;
     color:var(--gray);
     font-size:1rem;
