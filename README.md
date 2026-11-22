@@ -1,5 +1,7 @@
 # Vinicius Mossi — QA Portfolio
 
+[View the live portfolio](https://vinicius12pm.github.io/vinicius-mossi-portfolio/)
+
 Personal portfolio of Vinicius Mossi, a Manual QA Engineer focused on Salesforce and e-commerce quality.
 
 This project was built with ChatGPT as a learning experience—to explore new ideas, experiment, and, honestly, just play and have fun.
