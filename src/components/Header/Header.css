@@ -98,6 +98,14 @@ body.menu-open {
     line-height: 1;
   }
 
+  body.menu-open .menu-button {
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 0px) + 36px);
+    right: 24px;
+    transform: translateY(-50%);
+    z-index: 1002;
+  }
+
   .nav {
     display: none;
   }
