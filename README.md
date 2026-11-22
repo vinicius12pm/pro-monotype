@@ -2,6 +2,8 @@
 
 Personal portfolio of Vinicius Mossi, a Manual QA Engineer focused on Salesforce and e-commerce quality.
 
+This project was built with ChatGPT as a learning experience—to explore new ideas, experiment, and, honestly, just play and have fun.
+
 The site presents professional experience across Salesforce Commerce Cloud, Salesforce Service Cloud, Salesforce Loyalty Management, and Salesforce Financial Services Cloud. It also includes an About page, contact links, and a section about ongoing learning in test automation.
 
 ## Built with
