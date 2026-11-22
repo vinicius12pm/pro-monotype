@@ -7,7 +7,7 @@ const projects = [
     description:
       "My primary area of expertise is SFCC, where I have worked across complex B2B and B2C e-commerce journeys connected to OMS, on both desktop and mobile. Beyond ticket validation, I handled ticket sign-off during QA coverage, performed functional testing, ran smoke and exploratory tests across environments, and supported root-cause validation. I helped build a full-site UI/UX regression suite, organized test cases in TestRail, and performed API checks with Postman. As the QA representative in client Scrum ceremonies, I partnered with Product, Design, Content, Marketing, and Engineering to clarify stories and raise quality risks early.",
     focusLabel: "Coverage",
-    focus: "B2B/B2C · Desktop/mobile · DEV/STG/UAT/PROD",
+    focus: "B2B/B2C · Desktop/mobile · DEV/UAT/PROD",
     technologyLabel: "QA practices & tools",
     technology:
       "Functional · smoke & exploratory testing · UI/UX regression suite · TestRail · Postman API checks · Figma · Perfect Pixel Validation",
