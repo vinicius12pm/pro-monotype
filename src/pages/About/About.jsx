@@ -32,14 +32,22 @@ function About() {
       <div className="about-content">
         <h1 className="about-title" id="about-title">About me</h1>
         <p className="about-summary">
-          I am a Manual QA Engineer with strong experience working in international
-          environments and a focus on Salesforce. I work with Salesforce Commerce
-          Cloud (e-commerce), Salesforce Loyalty Management (loyalty programs), and
-          Salesforce Service Cloud, including Cases and Knowledge. My work includes
-          planning, executing, and analyzing manual tests, tracking bugs, and running
-          regression tests to support software quality and established best
-          practices. I communicate daily in English with global clients and
-          cross-functional teams.
+          I’m a Manual QA Engineer who likes asking, “What happens if I try this?”
+          I’m curious about details and how things work, and I enjoy learning
+          something new every day. My main experience is with Salesforce Commerce
+          Cloud and e-commerce websites, where I test different journeys on desktop
+          and mobile. When something needs to get done, I don’t like to just wait
+          and see. I ask questions, look for answers, and work with the team to make
+          it happen. Finding a bug is satisfying, but helping solve it and make the
+          experience better is even more rewarding. I’m always curious, ready to
+          learn, and happy to click that button one more time.
+        </p>
+        <p className="about-summary">
+          I’ve also worked with Salesforce Loyalty Management and Salesforce Service Cloud. I enjoy
+          working with clients and people from different teams, sharing ideas, and
+          learning from each experience. I’m someone who likes to understand the
+          details, take initiative, and keep going until things move in the right
+          direction.
         </p>
 
         <div className="about-divider" aria-hidden="true" />
