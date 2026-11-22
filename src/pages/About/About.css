@@ -42,24 +42,70 @@
     margin-top:1.8em;
 }
 
-.about-divider {
-    width:88px;
-    height:3px;
-    margin:32px 0 44px;
-    background:var(--accent);
+.about-question-link {
+    display:inline;
+    padding:0;
+    border:0;
+    border-bottom:1px solid var(--accent);
+    background:transparent;
+    color:inherit;
+    font:inherit;
+    cursor:pointer;
+    transition:color .2s ease;
 }
 
-.skills-title {
-    margin-bottom:22px;
-    font-size:clamp(1.5rem, 3vw, 1.8rem);
+.about-question-link:hover,
+.about-question-link:focus-visible {
+    color:var(--accent);
 }
 
-.skills-list {
-    max-width:92ch;
-    margin:0;
-    color:var(--gray);
-    font-size:1rem;
-    line-height:2;
+.about-question-link:focus-visible {
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+}
+
+.about-click-link {
+    position:relative;
+    white-space:nowrap;
+}
+
+.about-click-link.is-sparkling {
+    color:#e9a900;
+    text-shadow:0 0 8px rgb(245 189 50 / 75%);
+    animation:about-glow .35s ease-in-out infinite alternate;
+}
+
+.about-click-link.is-sparkling::before,
+.about-click-link.is-sparkling::after {
+    position:absolute;
+    color:#f5bd32;
+    font-size:.9em;
+    pointer-events:none;
+    text-shadow:0 0 8px rgb(245 189 50 / 85%);
+}
+
+.about-click-link.is-sparkling::before {
+    content:"✦";
+    left:-.9em;
+    top:-.45em;
+    animation:about-sparkle .45s ease-in-out infinite alternate;
+}
+
+.about-click-link.is-sparkling::after {
+    content:"✧";
+    right:-.85em;
+    bottom:-.4em;
+    animation:about-sparkle .55s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes about-glow {
+    from { text-shadow:0 0 3px rgb(245 189 50 / 45%); }
+    to { text-shadow:0 0 11px rgb(245 189 50 / 95%); }
+}
+
+@keyframes about-sparkle {
+    from { transform:scale(.65) rotate(-18deg); opacity:.45; }
+    to { transform:scale(1.2) rotate(18deg); opacity:1; }
 }
 
 @media (max-width:768px) {
@@ -85,16 +131,4 @@
         line-height:1.75;
     }
 
-    .about-divider {
-        margin:26px 0 34px;
-    }
-
-    .skills-title {
-        margin-bottom:16px;
-    }
-
-    .skills-list {
-        font-size:.95rem;
-        line-height:1.9;
-    }
 }

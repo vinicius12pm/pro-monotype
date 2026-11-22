@@ -1,5 +1,31 @@
 import "./Projects.css";
 
+const skills = [
+  "Manual testing",
+  "Functional testing",
+  "Regression testing",
+  "Smoke testing",
+  "Accessibility testing (WAVE, keyboard navigation)",
+  "Test cases",
+  "Test plans",
+  "Bug tracking",
+  "Log analysis and test data investigation",
+  "Jira",
+  "TestRail",
+  "Confluence",
+  "Salesforce Commerce Cloud (SFCC)",
+  "Salesforce Service Cloud",
+  "Salesforce Loyalty Management",
+  "E-commerce QA",
+  "Cross-device testing (desktop and mobile)",
+  "Performance-related change validation",
+  "HTML/CSS basics",
+  "API testing basics (Postman)",
+  "Cross-functional communication",
+  "Release support",
+  "English communication (daily meetings, documentation, and client interactions)",
+];
+
 const projects = [
   {
     label: "SFCC · E-COMMERCE",
@@ -59,6 +85,11 @@ function Projects() {
             </article>
           ))}
         </div>
+
+        <section className="projects-skills" aria-labelledby="projects-skills-title">
+          <h2 className="projects-skills-title" id="projects-skills-title">Skills</h2>
+          <p className="projects-skills-list">{skills.join(" • ")}</p>
+        </section>
       </div>
     </section>
   );

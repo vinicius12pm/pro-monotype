@@ -109,6 +109,25 @@
     margin-top:14px;
 }
 
+.projects-skills {
+    margin-top:44px;
+    padding-top:28px;
+    border-top:1px solid var(--line);
+}
+
+.projects-skills-title {
+    margin:0 0 16px;
+    font-size:clamp(1.5rem, 3vw, 1.8rem);
+}
+
+.projects-skills-list {
+    max-width:92ch;
+    margin:0;
+    color:var(--gray);
+    font-size:1rem;
+    line-height:2;
+}
+
 @media (max-width:768px) {
     .projects-page {
         padding:36px 22px 48px;
@@ -140,5 +159,19 @@
         margin-top:22px;
         padding-top:16px;
         border-top:1px solid var(--line);
+    }
+
+    .projects-skills {
+        margin-top:32px;
+        padding-top:22px;
+    }
+
+    .projects-skills-title {
+        margin-bottom:14px;
+    }
+
+    .projects-skills-list {
+        font-size:.95rem;
+        line-height:1.9;
     }
 }
