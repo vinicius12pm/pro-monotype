@@ -26,7 +26,11 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <h1 className="logo">VM<span className="logo-dot">.</span></h1>
+        <h1 className="logo">
+          <NavLink to="/" aria-label="Home">
+            VM<span className="logo-dot">.</span>
+          </NavLink>
+        </h1>
         <button
           className="menu-button"
           aria-expanded={menuOpen}
