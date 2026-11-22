@@ -1,22 +1,40 @@
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    const body = document.body;
+
+    if (menuOpen) {
+      root.classList.add("menu-open");
+      body.classList.add("menu-open");
+    } else {
+      root.classList.remove("menu-open");
+      body.classList.remove("menu-open");
+    }
+
+    return () => {
+      root.classList.remove("menu-open");
+      body.classList.remove("menu-open");
+    };
+  }, [menuOpen]);
+
   return (
     <header className="header">
       <div className="container">
-
         <h1 className="logo">VM.</h1>
-<button
-    className="menu-button"
-    onClick={() => setMenuOpen(!menuOpen)}
->
-    {menuOpen ? "✕" : "☰"}
-</button>
+        <button
+          className="menu-button"
+          aria-expanded={menuOpen}
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? "✕" : "☰"}
+        </button>
 
         <nav className={menuOpen ? "nav open" : "nav"}>
           <ul className="nav-list">
@@ -61,8 +79,6 @@ function Header() {
             </li>
           </ul>
         </nav>
-
-
       </div>
     </header>
   );
