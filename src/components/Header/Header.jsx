@@ -26,7 +26,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <h1 className="logo">VM.</h1>
+        <h1 className="logo">VM<span className="logo-dot">.</span></h1>
         <button
           className="menu-button"
           aria-expanded={menuOpen}
@@ -47,7 +47,6 @@ function Header() {
                 )}
               </NavLink>
             </li>
-
             <li>
               <NavLink to="/about" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
                 {({ isActive }) => (
@@ -57,7 +56,6 @@ function Header() {
                 )}
               </NavLink>
             </li>
-
             <li>
               <NavLink to="/projects" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
                 {({ isActive }) => (
@@ -67,7 +65,6 @@ function Header() {
                 )}
               </NavLink>
             </li>
-
             <li>
               <NavLink to="/contact" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
                 {({ isActive }) => (
