@@ -32,12 +32,8 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="projects-page" aria-labelledby="projects-title">
+    <section className="projects-page" aria-label="Projects">
       <div className="projects-content">
-        <header className="projects-heading">
-          <h1 className="projects-title" id="projects-title">Projects</h1>
-        </header>
-
         <div className="projects-grid">
           {projects.map((project) => (
             <article className="project-card" key={project.title}>
