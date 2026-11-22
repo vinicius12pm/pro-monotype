@@ -1,5 +1,9 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   width: 100%;
+  background: #fff;
   border-bottom: 1px solid var(--line);
 }
 
@@ -80,9 +84,12 @@ body.menu-open {
 
   .menu-button {
     display: block;
-    position: fixed;
-    top: 26px;
-    right: 30px;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    padding: 0;
+    line-height: 1;
   }
 
   .nav {
