@@ -37,7 +37,7 @@ const projects = [
     label: "SFCC · E-COMMERCE",
     title: "Salesforce Commerce Cloud",
     description:
-      "My primary area of expertise is SFCC, where I have worked across complex B2B and B2C e-commerce journeys connected to OMS, on both desktop and mobile. Beyond ticket validation, I handled ticket sign-off during QA coverage, performed functional testing, ran smoke and exploratory tests across environments, and supported root-cause validation. I helped build a full-site UI/UX regression suite, organized test cases in TestRail, and performed API checks with Postman. As the QA representative in client Scrum ceremonies, I partnered with Product, Design, Content, Marketing, and Engineering to clarify stories and raise quality risks early.",
+      "SFCC is my main area of expertise. I’ve worked on complex B2B and B2C e-commerce journeys connected to OMS, across desktop and mobile. My work included functional, smoke, and exploratory testing, ticket sign-off, and root-cause validation. I also helped build a full-site UI/UX regression suite, organized test cases in TestRail, and performed API checks with Postman. In Scrum, I worked with different teams to clarify stories and raise quality risks early.",
   },
   {
     label: "SERVICE CLOUD · IMPLEMENTATION",

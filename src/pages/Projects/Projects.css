@@ -54,6 +54,7 @@
     color:var(--gray);
     font-size:1rem;
     line-height:1.75;
+    text-align:justify;
 }
 
 .personal-experience {
@@ -68,6 +69,7 @@
     color:var(--gray);
     font-size:1rem;
     line-height:1.8;
+    text-align:justify;
 }
 
 .projects-skills {
@@ -87,6 +89,7 @@
     color:var(--gray);
     font-size:1rem;
     line-height:2;
+    text-align:justify;
 }
 
 @media (max-width:768px) {
